@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+  >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|center_horizontal">
+        <Button
+            android:id="@+id/TrueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trueText"
+            android:onClick="Correct"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+        <Button
+            android:id="@+id/FalseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/falseText"
+            android:onClick="Incorrect"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:layout_gravity="center_horizontal|top"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nextText"
+        android:gravity="bottom"
+        android:layout_gravity="right|bottom"
+        android:onClick="changeMessage"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/holo_orange_light"
+        />
+    <Button
+        android:id="@+id/score_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="scoreCard"
+        android:gravity="bottom"
+        android:layout_gravity="left|bottom"
+        android:onClick="score"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/holo_orange_light"
+        />
+
+
+</FrameLayout>
