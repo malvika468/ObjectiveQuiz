@@ -57,15 +57,36 @@
         android:textStyle="bold"
         android:backgroundTint="@android:color/holo_orange_light"
         />
-    <Button
-        android:id="@+id/score_button"
+
+
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="scoreCard"
-        android:onClick="score"
-        android:textStyle="bold"
-        android:backgroundTint="@android:color/holo_orange_light"
-        />
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/HintButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hintText"
+            android:drawableLeft="@drawable/arrow_left"
+            android:onClick="Hint"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+        <Button
+            android:id="@+id/CheatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheatText"
+            android:drawableRight="@drawable/arrow_right"
+            android:onClick="Cheat"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/holo_orange_light"
+            />
+    </LinearLayout>
+
+
 
 
 

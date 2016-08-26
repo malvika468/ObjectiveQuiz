@@ -4,4 +4,6 @@
     <string name="trueText">True</string>
     <string name="falseText">False</string>
     <string name="nextText">Next</string>
+    <string name="cheatText">Cheat</string>
+    <string name="hintText">Hint</string>
 </resources>
